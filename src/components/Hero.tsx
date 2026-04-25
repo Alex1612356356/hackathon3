@@ -18,25 +18,28 @@ export function Hero() {
       >
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-purple-400 mb-6">
           <Sparkles size={14} />
-          <span>The Next Evolution of AI</span>
+          <span>Evoluează, nu doar interacționa.</span>
         </div>
 
         <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-6">
-          PURE <br />
-          <span className="text-gradient">INTELLIGENCE</span>
+          Growth <br />
+          <span className="text-gradient">AI</span>
         </h1>
 
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+          AI-ul care te ține pe drumul cel bun.
+        </h2>
+
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/50 leading-relaxed mb-10">
-          A hyper-fast, ultra-responsive AI engine designed for the next generation.
-          Flashy by design, minimalist by nature.
+          Majoritatea oamenilor folosesc AI-ul ca să muncească mai puțin. Noi l-am construit ca să te ajute să fii mai mult. <strong>Growth AI</strong> este filtrul tău personal de productivitate care analizează fiecare interacțiune și îți spune clar: te dezvoltă sau îți irosește potențialul?
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 font-bold text-lg hover:scale-105 transition-transform shadow-[0_0_30px_-5px_rgba(147,51,234,0.5)]">
-            Get Started
+            Începe acum
           </button>
           <button className="w-full sm:w-auto px-8 py-4 rounded-2xl glass font-bold text-lg hover:bg-white/10 transition-colors">
-            View Docs
+            Vezi cum funcționează
           </button>
         </div>
       </motion.div>

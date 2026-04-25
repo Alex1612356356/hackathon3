@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="py-12 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-white/30 text-sm font-mono">
-          © 2025 AESTHETIX CORE. ALL RIGHTS RESERVED.
+          © 2026 Growth AI. Construit pentru performanță.
         </div>
         <div className="flex gap-8 text-white/30 text-xs uppercase tracking-widest font-bold">
           <a href="#" className="hover:text-pink-500 transition-colors">Twitter</a>

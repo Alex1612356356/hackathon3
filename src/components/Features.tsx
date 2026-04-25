@@ -1,39 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, Shield, Cpu, Globe } from "lucide-react";
+import { Search, GraduationCap, BarChart3 } from "lucide-react";
 
 const features = [
   {
-    title: "Instant Response",
-    desc: "Sub-millisecond latency for real-time interactions.",
-    icon: Zap,
+    title: "Auditor de Activitate",
+    desc: "Analizăm prompțurile tale în timp real.",
+    icon: Search,
     color: "from-purple-500 to-indigo-500",
   },
   {
-    title: "Neural Security",
-    desc: "Advanced encryption layer powered by AI.",
-    icon: Shield,
+    title: "Smart Learning",
+    desc: "Transformăm orice explicație în flashcard-uri instant.",
+    icon: GraduationCap,
     color: "from-pink-500 to-rose-500",
   },
   {
-    title: "Core Core",
-    desc: "Multimodal processing architecture.",
-    icon: Cpu,
+    title: "Habit Tracker",
+    desc: "Statistici reci și clare despre progresul tău real.",
+    icon: BarChart3,
     color: "from-orange-500 to-amber-500",
-  },
-  {
-    title: "Global Mesh",
-    desc: "Deploy intelligence across 100+ edge locations.",
-    icon: Globe,
-    color: "from-blue-500 to-cyan-500",
   },
 ];
 
 export function Features() {
   return (
     <section className="py-24 px-4 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {features.map((f, i) => (
           <motion.div
             key={i}

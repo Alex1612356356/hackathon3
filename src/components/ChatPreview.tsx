@@ -5,10 +5,15 @@ import { Send, User, Bot } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const messages = [
-  { role: "user", content: "Analyze the aesthetic potential of this interface." },
+  { role: "user", content: "Fă-mi tema la istorie despre Revoluția Franceză, doar dă-mi textul să-l copiez." },
   {
     role: "assistant",
-    content: "Scanning... The interface exhibits high levels of 'juiciness'. Gradient saturation at 100%. Glassmorphism depth optimized for maximum sexiness. Ascension protocol ready."
+    content: "⚠️ ATENȚIE: Activitate dăunătoare detectată (Copy-paste / Procrastinare mascată). Folosirea AI-ului ca o cârjă îți blochează procesul de învățare. Încearcă să ceri o structură sau explicații pentru punctele pe care nu le înțelegi."
+  },
+  { role: "user", content: "Ai dreptate. Explică-mi cauzele economice ale revoluției și ajută-mi să fac un plan de eseu." },
+  {
+    role: "assistant",
+    content: "✅ ACTIVITATE CONSTRUCTIVĂ: Analiză și studiu. Excelent! Cauzele economice includ criza financiară a monarhiei, recoltele slabe și sistemul de taxe inechitabil. Iată o structură propusă..."
   },
 ];
 
@@ -29,7 +34,7 @@ export function ChatPreview() {
               <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
               <div className="w-3 h-3 rounded-full bg-green-500/50" />
             </div>
-            <div className="text-xs font-mono text-white/30 uppercase tracking-widest">Aesthetix-Alpha-v1</div>
+            <div className="text-xs font-mono text-white/30 uppercase tracking-widest">Growth-AI-Productivity-Filter</div>
           </div>
 
           {/* Chat Area */}
@@ -55,7 +60,9 @@ export function ChatPreview() {
                   "max-w-[80%] p-4 rounded-2xl text-sm leading-relaxed",
                   m.role === "user"
                     ? "bg-white/5 border border-white/10 text-white/80"
-                    : "bg-white/10 border border-white/20 text-white font-medium shadow-lg"
+                    : m.content.includes("ATENȚIE")
+                      ? "bg-red-500/10 border border-red-500/50 text-red-200 font-medium shadow-lg shadow-red-500/10"
+                      : "bg-green-500/10 border border-green-500/50 text-green-200 font-medium shadow-lg shadow-green-500/10"
                 )}>
                   {m.content}
                 </div>

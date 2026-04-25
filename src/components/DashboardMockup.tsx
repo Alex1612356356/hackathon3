@@ -5,10 +5,10 @@ import { Activity, Zap, Brain, Target } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const stats = [
-  { label: "Neural Load", value: "42%", icon: Brain, color: "text-purple-500" },
-  { label: "Throughput", value: "1.2GB/s", icon: Zap, color: "text-pink-500" },
-  { label: "Precision", value: "99.9%", icon: Target, color: "text-orange-500" },
-  { label: "Status", value: "Active", icon: Activity, color: "text-green-500" },
+  { label: "Growth Score", value: "88/100", icon: Brain, color: "text-purple-500" },
+  { label: "Energie Skill-uri", value: "72%", icon: Zap, color: "text-pink-500" },
+  { label: "Productivity Streak", value: "12 Zile", icon: Target, color: "text-orange-500" },
+  { label: "Status", value: "Optimizat", icon: Activity, color: "text-green-500" },
 ];
 
 export function DashboardMockup() {
@@ -16,8 +16,8 @@ export function DashboardMockup() {
     <section className="py-24 px-4 bg-gradient-to-b from-transparent to-purple-900/10">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">Neural Control Center</h2>
-          <p className="text-white/40">Real-time metrics for your autonomous systems.</p>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 uppercase tracking-tighter">ANALYTICS & HABITS</h2>
+          <p className="text-white/40">Cifrele nu mint. Dashboard-ul tău de performanță.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -31,9 +31,9 @@ export function DashboardMockup() {
               </div>
             </div>
 
-            <h3 className="text-xl font-bold mb-8 flex items-center gap-2">
+            <h3 className="text-xl font-bold mb-8 flex items-center gap-2 uppercase tracking-tight">
               <Activity className="text-purple-500" size={20} />
-              Performance Flow
+              Evoluție pe Termen Lung
             </h3>
 
             <div className="h-64 flex items-end gap-3 px-4">
@@ -54,9 +54,9 @@ export function DashboardMockup() {
             </div>
 
             <div className="mt-8 flex justify-between text-[10px] font-mono text-white/20 uppercase tracking-tighter">
-              <span>00:00:00</span>
-              <span>Buffer Syncing...</span>
-              <span>00:00:59</span>
+              <span>Ian 2026</span>
+              <span>Se sincronizează progresul...</span>
+              <span>Dec 2026</span>
             </div>
           </div>
 
